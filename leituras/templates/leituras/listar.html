@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registros de Acesso RFID</title>
+</head>
+<body>
+    <h1>Registros de Acesso RFID</h1>
+    <ul>
+        {% for acesso in acessos %}
+            <li>{{ acesso.uid }} - {{ acesso.data_hora }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
